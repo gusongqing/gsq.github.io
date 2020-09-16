@@ -15,15 +15,31 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+    <!-- Quantcast Tag -->
     <script type="text/javascript">
-      window._mfq = window._mfq || [];
-      (function() {
-          var mf = document.createElement("script");
-          mf.type = "text/javascript"; mf.defer = true;
-          mf.src = "//cdn.mouseflow.com/projects/68d9fc09-2417-427e-b42f-b322acc4f2a7.js";
-          document.getElementsByTagName("head")[0].appendChild(mf);
-      })();
-</script>
+        var _qevents = _qevents || [];
+
+        (function() {
+        var elem = document.createElement('script');
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0];
+        scpt.parentNode.insertBefore(elem, scpt);
+        })();
+
+        _qevents.push({
+        qacct:"p-cHZ-snZcpBkNB",
+        uid:"__INSERT_EMAIL_HERE__"
+        });
+    </script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-cHZ-snZcpBkNB.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
    
 </head>
 <body>
