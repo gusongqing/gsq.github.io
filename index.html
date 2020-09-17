@@ -15,24 +15,18 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
-    <!-- Quantcast Tag -->
+    <!-- FoxMetrics Web Analytics Start -->
     <script type="text/javascript">
-        var _qevents = _qevents || [];
-
-        (function() {
-        var elem = document.createElement('script');
-        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
-        elem.async = true;
-        elem.type = "text/javascript";
-        var scpt = document.getElementsByTagName('script')[0];
-        scpt.parentNode.insertBefore(elem, scpt);
+        var _fxm = _fxm || {};
+        _fxm.events = _fxm.events || [];
+        _fxm.app_id = _fxm.app_id || '5f62ba6ecb1fe413e8da047a';
+        (function () {
+            var fxms = document.createElement('script'); fxms.type = 'text/javascript'; fxms.async = true;
+            fxms.src = 'https://d35tca7vmefkrc.cloudfront.net/scripts/5f62ba6ecb1fe413e8da047a.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(fxms, s);
         })();
-
-        _qevents.push({
-        qacct:"p-cHZ-snZcpBkNB",
-        uid:"__INSERT_EMAIL_HERE__"
-        });
     </script>
+    <!-- FoxMetrics Web Analytics End -->
 
 <noscript>
 <div style="display:none;">
