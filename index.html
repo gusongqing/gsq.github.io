@@ -15,13 +15,24 @@
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
+    <script async src="https://js.refiner.io/v001/client.js"></script>
     <script>
+        window._refinerQueue = window._refinerQueue || [];
+        function _refiner(){_refinerQueue.push(arguments);}
+        _refiner('setProject', '1061a220-fcb3-11ea-8dd0-3d3352ef5331');
+        _refiner('identifyUser', {
+            id: 'USER-ID-ABC-123', // Replace with your user ID
+            email: 'jane@awesome.com', // Replace with user Email
+            name: 'Jane Doe', // Replace with user name
+        });
+    </script>
+<!--     <script>
         (function(h,e,a,t,m,p) {
         m=e.createElement(a);m.async=!0;m.src=t;
         p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
         })(window,document,'script','https://u.heatmap.it/log.js');
-    </script>
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="55cb3ada-06d1-4a4b-af32-51f79dcccb1c";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    </script> -->
+<!--     <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="55cb3ada-06d1-4a4b-af32-51f79dcccb1c";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> -->
     <!-- FoxMetrics Web Analytics Start -->
 <!--     <script type="text/javascript">
         var _fxm = _fxm || {};
