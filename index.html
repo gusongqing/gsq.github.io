@@ -14,24 +14,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PV9LQWV');</script> -->
 <!-- End Google Tag Manager -->
 
-	<script type="application/javascript">
-	    Conversify = window.Conversify || [];
-	    window.CONVERSIFY_MSG_VARS = {greeting: 'Welcome back, Alice!'};
-	    Conversify.pagetype = "product";
-            Conversify.product = {id:888, stock: 3};
-	    Conversify.api_key = "d954dad72a3d000d90655fe0d44189b8";
-	    (function(d,e,c,cn,f,cfy,p) {
-	        f=d.cookie.split(cn)[1];f=f?f.split(';')[0]:'';
-	        p=c.product&& c.product.id?c.product.id:'';
-	        cfy=d.createElement("script");cfy.type="text/javascript";cfy.async=true;
-	        cfy.src='//js.conversify.com/v2/'+e(c.api_key)+'.js?pt='+e(c.pagetype)+'&ut='+e(f)+'&rf='+e(d.referrer||'')+'&p='+e(p);
-	        (d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(cfy);
-	    })(document, window.encodeURIComponent, Conversify, "__conversify_uid=");
-		
-	</script>
-	<!-- Conversify Conversion code -->
-	<script type="text/javascript"> var Conversify = window.Conversify || []; Conversify.push(["trackConversion", "Conversion", 0]); </script>
-	<!-- End Conversify Conversion code -->
+	<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-ZMDzasWsrhB7f",
+uid:"__INSERT_EMAIL_HERE__"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-ZMDzasWsrhB7f.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
 
   
 </head>
@@ -52,10 +59,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <h3>好好学习，天天向上！</h3>
             
    
-    <!-- 原网页原生js代码-->
-<!--     <script type="text/javascript" async
-        src="//l.getsitecontrol.com/pwpr0254.js">
-    </script> -->
+   
 </body>
     <!-- Google Tag Manager (noscript) -->
 <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV9LQWV"
